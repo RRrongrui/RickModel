@@ -4,18 +4,68 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/bitmap_icon_rrongrui"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".activity.EntryActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".activity.TViewActivity" />
+
+        <activity android:name=".activity.TAnalysisActivity" />
+        <activity android:name=".activity.TArcActivity" />
+
+        <activity android:name=".activity.TBezierActivity" />
+        <activity android:name=".activity.TBindingActivity" />
+        <activity android:name=".activity.TBubbleActivity" />
+        <activity android:name=".activity.TButtonActivity" />
+
+        <activity android:name=".activity.TDialogActivity" />
+        <activity android:name=".activity.TDrawActivity" />
+
+        <activity android:name=".activity.THollowActivity" />
+
+        <activity android:name=".activity.TImageActivity" />
+
+        <activity android:name=".activity.TLayoutActivity" />
+        <activity android:name=".activity.TLineActivity" />
+        <activity android:name=".activity.TLoadActivity" />
+
+        <activity android:name=".activity.TMaterialActivity" />
+        <activity android:name=".activity.TMoveActivity" />
+
+        <activity android:name=".activity.TPathActivity" />
+        <activity android:name=".activity.TPatternActivity" />
+        <activity android:name=".activity.TPentagramActivity" />
+        <activity android:name=".activity.TProgressActivity" />
+
+        <activity android:name=".activity.TRangeActivity" />
+        <activity android:name=".activity.TRepeatActivity" />
+        <activity android:name=".activity.TRippleActivity" />
+
+        <activity android:name=".activity.TScaleActivity" />
+        <activity android:name=".activity.TScratchActivity" />
+        <activity android:name=".activity.TSectorActivity" />
+        <activity android:name=".activity.TSeekActivity" />
+        <activity android:name=".activity.TSignActivity" />
+        <activity android:name=".activity.TSVGActivity" />
+
+        <activity android:name=".activity.TToggleActivity" />
+        <activity android:name=".activity.TTrackActivity" />
+        <activity android:name=".activity.TTrangleActivity" />
+
+        <activity android:name=".activity.TWaveActivity" />
+        <activity android:name=".activity.TWrapActivity" />
+
+        <activity android:name=".activity.TestActivity" />
     </application>
 
 </manifest>

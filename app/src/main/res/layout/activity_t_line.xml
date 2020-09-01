@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLineTop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:lineColor="#592d2e"
+        app:lineStyle="top"
+        app:lineThick="1dp" />
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLineBottom"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tLineTop"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tLineTop"
+        app:lineBackground="#fae500"
+        app:lineColor="#592d2e"
+        app:lineStyle="bottom"
+        app:lineThick="1dp" />
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLineLeft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tLineBottom"
+        android:layout_toRightOf="@id/tLineBottom"
+        app:lineColor="#592d2e"
+        app:lineStyle="left"
+        app:lineThick="1dp" />
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLineRight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tLineLeft"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tLineLeft"
+        app:lineBackground="#fae500"
+        app:lineColor="#592d2e"
+        app:lineStyle="right"
+        app:lineThick="1dp" />
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLineSlash"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tLineTop"
+        android:layout_alignLeft="@id/tLineTop"
+        android:layout_marginTop="16dp"
+        app:lineColor="#592d2e"
+        app:lineStyle="slash"
+        app:lineThick="1dp" />
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLineSlashBack"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tLineSlash"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tLineSlash"
+        app:lineBackground="#fae500"
+        app:lineColor="#592d2e"
+        app:lineStyle="slashBack"
+        app:lineThick="1dp" />
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLineCross"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tLineSlashBack"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tLineSlashBack"
+        app:lineColor="#592d2e"
+        app:lineStyle="cross"
+        app:lineThick="1dp" />
+</RelativeLayout>

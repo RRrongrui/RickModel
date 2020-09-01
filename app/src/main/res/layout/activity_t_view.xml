@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1eaee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textPrompt01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="backgroundNormal设置常规背景\ntextStyle设置字体\ntextAssets设置自定义字体\ntextFlag设置删除线下划线" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewRect01"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/textPrompt01"
+            android:layout_marginLeft="16dp"
+            app:adjust="true"
+            app:backgroundNormal="#444444"
+            app:text="#444444"
+            app:textColorNormal="#ffffff"
+            app:textFlag="strike_through"
+            app:textSize="12dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewRect02"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tViewRect01"
+            android:layout_toRightOf="@id/tViewRect01"
+            android:rotation="15"
+            app:adjust="true"
+            app:backgroundNormal="#cccccc"
+            app:text="#444444"
+            app:textColorNormal="#ffffff"
+            app:textFlag="under_line"
+            app:textSize="12dp"
+            app:textStyle="bold_italic" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewRect03"
+            style="@style/TViewRect"
+            android:layout_alignTop="@id/tViewRect02"
+            android:layout_toRightOf="@id/tViewRect02"
+            android:rotation="30"
+            app:adjust="true"
+            app:backgroundNormal="#666666"
+            app:text="#666666"
+            app:textAssets="fonts/computer.ttf"
+            app:textColorNormal="#ffffff"
+            app:touchUp="touchUp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewRect04"
+            style="@style/TViewRect"
+            android:layout_alignTop="@id/tViewRect03"
+            android:layout_toRightOf="@id/tViewRect03"
+            android:rotation="45"
+            app:adjust="true"
+            app:backgroundNormal="#cccccc"
+            app:onClick="onClick"
+            app:text="#cccccc"
+            app:textAssets="fonts/digital-7.ttf"
+            app:textColorNormal="#ffffff" />
+
+        <TextView
+            android:id="@+id/textPrompt02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tViewRect01"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="backgroundPress设置按下背景\nbackgroundSelect设置选中背景(设置selectable非none)\nsrcAnchorNormal设置锚图片\nsrcAnchorWidthNormal设置锚图片宽度\nsrcAnchorHeightNormal设置锚图片高度\nsrcAnchorGravity设置锚图片停靠(多属性用|分隔比如 bottom|right)" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewSelect01"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/textPrompt02"
+            android:layout_marginLeft="16dp"
+            app:backgroundNormal="#ffffff"
+            app:backgroundPress="#cccccc"
+            app:backgroundSelect="#000000"
+            app:radius="5dp"
+            app:selectStyle="reverse"
+            app:srcAnchorDxNormal="5dp"
+            app:srcAnchorDyNormal="5dp"
+            app:srcAnchorHeightNormal="7dp"
+            app:srcAnchorNormal="@drawable/bitmap_tview_anchor_normal"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_normal"
+            app:srcAnchorWidthNormal="10dp"
+            app:strokeColorSelect="#dedede"
+            app:strokeWidthSelect="1dp"
+            app:text="selectStyle=reverse"
+            app:textColorNormal="#dedede"
+            app:textSize="16dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewSelect02"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/tViewSelect01"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tViewSelect01"
+            app:backgroundNormal="#ffffff"
+            app:backgroundPress="#cccccc"
+            app:backgroundSelect="#000000"
+            app:radius="5dp"
+            app:selectStyle="always"
+            app:srcAnchorGravity="bottom|right"
+            app:srcAnchorHeightNormal="7dp"
+            app:srcAnchorNormal="@drawable/bitmap_tview_anchor_normal"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select"
+            app:srcAnchorWidthNormal="10dp"
+            app:strokeColorSelect="#dedede"
+            app:strokeWidthSelect="1dp"
+            app:text="selectStyle=always"
+            app:textColorNormal="#dedede"
+            app:textSize="16dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewSelect03"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/tViewSelect02"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tViewSelect02"
+            app:backgroundNormal="#ffffff"
+            app:backgroundPress="#cccccc"
+            app:backgroundSelect="#000000"
+            app:radius="5dp"
+            app:selectStyle="never"
+            app:srcAnchorGravity="bottom|right"
+            app:srcAnchorHeightNormal="7dp"
+            app:srcAnchorNormal="@drawable/bitmap_tview_anchor_normal"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select"
+            app:srcAnchorWidthNormal="10dp"
+            app:strokeColorSelect="#dedede"
+            app:strokeWidthSelect="1dp"
+            app:text="selectStyle=never"
+            app:textColorNormal="#dedede"
+            app:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textPrompt03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tViewSelect01"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="android:layerType=software(关闭硬件加速)\n使用TView.associate关联相应TView控件" />
+
+        <RelativeLayout
+            android:id="@+id/relative01"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/textPrompt03"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <View
+                android:id="@+id/viewAnchor01"
+                style="@style/ViewAnchor" />
+
+            <com.rickicecream.rick.TView
+                android:id="@+id/tViewGroupStart"
+                style="@style/TViewGroupDrackBrownStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/viewAnchor01"
+                app:select="true"
+                app:text="金枪鱼刺身"
+                app:textMarkColor="#ff0000"
+                app:textMarkRadius="4dp" />
+
+            <com.rickicecream.rick.TView
+                android:id="@+id/tViewGroupEnd"
+                style="@style/TViewGroupDrackBrownEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/viewAnchor01"
+                app:text="TunaSashimi"
+                app:textMark="true"
+                app:textMarkColor="#ff0000"
+                app:textMarkRadius="4dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@id/relative01"
+            android:layout_margin="16dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/textPrompt04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearGroup"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:color="#434343"
+            android:text="strokeWidth设置描边宽度\nstrokeColorNormal设置描边\ntextShadowColor设置文字阴影\ntextShadowRadius设置文字阴影半径\ntextShadowDx设置文字阴影横向偏移\ntextShadowDy设置文字阴影纵向偏移\ntextMarkRadius设置标识半径\ntextMarkColor设置标识\ntextMarkDx设置标识横向偏移\ntextMarkDx设置标识纵向偏移\ntextMarkText设置标识文本\ntextMarkTextSize设置标识字号\ntextMarkTextColor设置标识\ntextMarkTouchable禁止标识隐藏" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewShadow01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/textPrompt04"
+            android:layout_margin="16dp"
+            app:backgroundNormal="#e1e1e1"
+            app:strokeColorNormal="#999999"
+            app:strokeWidthNormal="1dp"
+            app:text="背景#e1e1e1描边#999999字体阴影#ff00ff字体阴影半径3dp字体阴影横向偏移2dp字体阴影纵向偏移2dp字体停靠center_left"
+            app:textColorNormal="#ffff00"
+            app:textGravity="center_left"
+            app:textMark="true"
+            app:textMarkColor="#ff0000"
+            app:textMarkRadius="10dp"
+            app:textMarkText="1"
+            app:textMarkTextColor="#ffffff"
+            app:textMarkTextSize="10dp"
+            app:textPaddingLeft="4dp"
+            app:textPaddingRight="4dp"
+            app:textShadowColor="#998383"
+            app:textShadowDx="2dp"
+            app:textShadowDy="2dp"
+            app:textShadowRadius="3dp"
+            app:textSize="14dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewShadow02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/tViewShadow01"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:backgroundNormal="#fae500"
+            app:backgroundPress="#d9c700"
+            app:backgroundShadowColorNormal="#998383"
+            app:backgroundShadowDxNormal="1dp"
+            app:backgroundShadowDyNormal="1dp"
+            app:backgroundShadowRadiusNormal="2dp"
+            app:radius="5dp"
+            app:strokeColorNormal="#ac9696"
+            app:strokeWidthNormal="1dp"
+            app:text="背景#fae500描边#ac9696背景阴影#998383背景阴影半径2dp背景阴影横向偏移1dp背景阴影纵向偏移1dp字体停靠left_center"
+            app:textColorNormal="#592d2d"
+            app:textColorPress="#592d2d"
+            app:textGravity="left_center"
+            app:textPaddingLeft="4dp"
+            app:textPaddingRight="4dp"
+            app:textSize="14dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewShadow03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/tViewShadow02"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:backgroundNormal="#0000ff"
+            app:backgroundShadowColorNormal="#800000ff"
+            app:backgroundShadowDxNormal="0dp"
+            app:backgroundShadowDyNormal="8dp"
+            app:backgroundShadowRadiusNormal="8dp"
+            app:radius="5dp"
+            app:text="字体fonts/simsun.ttf背景#0000ff背景阴影#800000ff背景阴影半径8dp背景阴影横向偏移0dp背景阴影纵向偏移0dp"
+            app:textAssets="fonts/simsun.ttf"
+            app:textColorNormal="#ffffff"
+            app:textPaddingLeft="8dp"
+            app:textPaddingRight="8dp"
+            app:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textPrompt05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tViewShadow03"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="backgroundAngle设置渐变方向\nbackgroundStart设置渐变开始\nbackgroundEnd设置渐变结束" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewGradient01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/textPrompt05"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:backgroundAngleNormal="270"
+            app:backgroundAnglePress="0"
+            app:backgroundEndNormal="#ffca00"
+            app:backgroundEndPress="#ffca00"
+            app:backgroundStartNormal="#ffec95"
+            app:backgroundStartPress="#592d2d"
+            app:radiusBottomLeft="5dp"
+            app:radiusTopLeft="5dp"
+            app:radiusTopRight="5dp"
+            app:strokeColorNormal="#999999"
+            app:strokeWidthNormal="1dp"
+            app:text="backgroundAngleNormal设置270,backgroundStartNormal设置#ffca00,backgroundEndNormal设置#592d2d"
+            app:textColorNormal="#ffffff"
+            app:textGravity="left"
+            app:textSize="14dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewGradient02"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@id/tViewGradient01"
+            android:layout_margin="16dp"
+            app:backgroundAngleNormal="315"
+            app:backgroundAnglePress="270"
+            app:backgroundEndNormal="#0000ff"
+            app:backgroundEndPress="#0000ff"
+            app:backgroundStartNormal="#ff0000"
+            app:backgroundStartPress="#ff0000"
+            app:radius="5dp"
+            app:strokeColorNormal="#999999"
+            app:strokeWidthNormal="1dp"
+            app:text="backgroundAngleNormal设置315,backgroundStartNormal设置#ffca00,backgroundEndNormal设置#ffca00"
+            app:textColorNormal="#ffffff"
+            app:textGravity="left"
+            app:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textPrompt06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tViewGradient02"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:color="#434343"
+            android:text="radius设置统一弧度,或者使用radiusTopLeft,radiusTopRight,radiusBottomLeft,radiusBottomRight分别设置弧度" />
+
+        <View
+            android:id="@+id/tViewAnchorSecondaryButton01"
+            style="@style/ViewAnchor"
+            android:layout_below="@id/textPrompt06"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tView03"
+            style="@style/TViewTextMarkRedHorizontal"
+            android:layout_alignTop="@id/tViewAnchorSecondaryButton01"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@id/tViewAnchorSecondaryButton01"
+            app:backgroundNormal="#fae500"
+            app:backgroundPress="#d9c700"
+            app:strokeColorNormal="#592d2d"
+            app:strokeWidthNormal="1dp"
+            app:text="背景按下#d9c700"
+            app:textColorNormal="#ffffff" />
+
+        <com.rickicecream.rick.TView
+            style="@style/TViewTextMarkRedTop"
+            android:layout_alignTop="@id/tViewAnchorSecondaryButton01"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/tViewAnchorSecondaryButton01"
+            app:backgroundNormal="#fae500"
+            app:foregroundPress="#50444444"
+            app:radiusBottomLeft="5dp"
+            app:radiusTopLeft="5dp"
+            app:strokeColorNormal="#592d2d"
+            app:strokeWidthNormal="1dp"
+            app:text="前景按下#50444444"
+            app:textColorNormal="#ffffff"
+            app:textMarkTouchable="true" />
+
+        <TextView
+            android:id="@+id/clipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tView03"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="srcNormal设置常规图片(根据形状进行截取)\nsrcPress设置按下图片\nsrcSelect设置选中图片" />
+
+        <View
+            android:id="@+id/viewAnchorSecondaryButton02"
+            style="@style/ViewAnchor"
+            android:layout_below="@id/clipButton" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tView04"
+            style="@style/TViewTextMarkRedHorizontal"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/viewAnchorSecondaryButton02"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/viewAnchorSecondaryButton02"
+            app:radiusBottomLeft="5dp"
+            app:radiusTopLeft="5dp"
+            app:srcNormal="@drawable/bitmap_tview_srcnormal01"
+            app:srcPress="@drawable/bitmap_tview_srcnormal02"
+            app:text="textMark=true&amp;textGravity=right&amp;textPaddingRight=40dp"
+            app:textColorNormal="#ffffff"
+            app:textGravity="right"
+            app:textPaddingRight="40dp" />
+
+        <com.rickicecream.rick.TView
+            style="@style/TViewTextMarkRedHorizontal"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/viewAnchorSecondaryButton02"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/viewAnchorSecondaryButton02"
+            app:radiusBottomRight="5dp"
+            app:radiusTopRight="5dp"
+            app:srcNormal="@drawable/bitmap_tview_srcnormal01"
+            app:srcPress="@drawable/bitmap_tview_srcnormal02"
+            app:text="textPaddingLeft=20dp&amp;textRowSpaceRatio=150%"
+            app:textColorNormal="#ffffff"
+            app:textPaddingLeft="42dp"
+            app:textRowSpaceRatio="150%" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tView05"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tView04"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            app:radius="100dp"
+            app:srcNormal="@drawable/bitmap_tview_srcnormal03"
+            app:srcPress="@drawable/bitmap_tview_srcnormal04"
+            app:strokeColorNormal="#ff0000"
+            app:strokeWidthNormal="2dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tView06"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@id/tView05"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/tView05"
+            app:porterDuffXferStyle="src_in"
+            app:radius="26dp"
+            app:srcNormal="@drawable/bitmap_tview_srcnormal03"
+            app:srcPress="@drawable/bitmap_tview_srcnormal04" />
+
+        <com.rickicecream.rick.TView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@id/tView06"
+            android:layout_toRightOf="@id/tView06"
+            app:porterDuffXferStyle="src_out"
+            app:radius="24dp"
+            app:srcNormal="@drawable/bitmap_tview_srcnormal03"
+            app:srcPress="@drawable/bitmap_tview_srcnormal04" />
+
+        <TextView
+            android:id="@+id/textPrompt07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tView05"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="srcShadowRadiusNormal设置背景图阴影半径,注意设置的时候一定要把父控件的背景作为backgroundNormal传入\nsrcShadowDxNormal设置背景图阴影横向偏移\nsrcShadowDxNormal设置背景图阴影纵向偏移\n针对backgroundShadow偏移,移动的是背景图上阴影的绘制" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tView08"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/textPrompt07"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:backgroundNormal="#c1eaee"
+            app:srcNormal="@drawable/bitmap_tview_srcnormal03"
+            app:srcPress="@drawable/bitmap_tview_srcnormal04"
+            app:srcShadowRadiusNormal="8dp" />
+
+        <com.rickicecream.rick.TView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@id/tView08"
+            android:layout_toRightOf="@id/tView08"
+            app:backgroundShadowColorNormal="#998383"
+            app:backgroundShadowDxNormal="2dp"
+            app:backgroundShadowDyNormal="2dp"
+            app:backgroundShadowRadiusNormal="2dp"
+            app:srcNormal="@drawable/bitmap_tview_srcnormal03"
+            app:srcPress="@drawable/bitmap_tview_srcnormal04" />
+
+        <TextView
+            android:id="@+id/textPrompt08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tView08"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="content和text用法相同" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_below="@id/textPrompt08"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:backgroundNormal="#e1e1e1"
+            app:content="1."
+            app:contentColorNormal="#999999"
+            app:contentDy="-28dp"
+            app:contentGravity="left"
+            app:contentPaddingLeft="8dp"
+            app:contentSize="14dp"
+            app:strokeColorNormal="#999999"
+            app:strokeWidthNormal="1dp"
+            app:text="同时设置content和text通过设置不同的contentPaddingLeft,textPaddingLeft,contentDy及textDy来实现标题缩进的效果"
+            app:textColorNormal="#999999"
+            app:textDy="6dp"
+            app:textGravity="left"
+            app:textMark="true"
+            app:textMarkColor="#ff0000"
+            app:textMarkRadius="10dp"
+            app:textMarkText="1"
+            app:textMarkTextColor="#ffffff"
+            app:textMarkTextSize="10dp"
+            app:textPaddingLeft="18dp"
+            app:textPaddingRight="18dp"
+            app:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textPrompt09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tViewContent"
+            android:layout_margin="16dp"
+            android:color="#434343"
+            android:text="srcLeftNormal设置文字左边图片\nsrcLeftWidthNormal设置图片宽度\nsrcLeftHeightNormal设置图片高度\nsrcLeftPaddingNormal设置图片与文字间距\nsrcLeftDxNormal设置左右偏移\nsrcLeftDyNormal设置上下偏移" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewSrcLeft"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/textPrompt09"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:backgroundNormal="#00000000"
+            app:radius="5dp"
+            app:srcLeftDyNormal="1dp"
+            app:srcLeftHeightNormal="10dp"
+            app:srcLeftNormal="@drawable/bitmap_tview_src_rmb"
+            app:srcLeftWidthNormal="9dp"
+            app:strokeColorNormal="#ffffff"
+            app:strokeWidthNormal="1dp"
+            app:text="100"
+            app:textColorNormal="#ffffff"
+            app:textSize="16dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewSrcLeftPadding"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/tViewSrcLeft"
+            android:layout_toRightOf="@id/tViewSrcLeft"
+            app:backgroundNormal="#00000000"
+            app:radius="5dp"
+            app:srcRightDyNormal="1dp"
+            app:srcRightHeightNormal="10dp"
+            app:srcRightNormal="@drawable/bitmap_tview_src_rmb"
+            app:srcRightPaddingNormal="8dp"
+            app:srcRightWidthNormal="9dp"
+            app:strokeColorNormal="#ffffff"
+            app:strokeWidthNormal="1dp"
+            app:text="100"
+            app:textColorNormal="#ffffff"
+            app:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tViewSrcLeftPadding"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/tViewSrcLeftPadding"
+            android:color="#434343"
+            android:text="srcLeftPaddingNormal设置8dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewSrcRight"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/tViewSrcLeft"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:srcLeftHeightNormal="18dp"
+            app:srcLeftNormal="@drawable/bitmap_tview_fliter01"
+            app:srcLeftPaddingNormal="6dp"
+            app:srcLeftSelect="@drawable/bitmap_tview_fliter02"
+            app:srcLeftWidthNormal="17dp"
+            app:text="筛选"
+            app:textColorNormal="#62636c"
+            app:textColorSelect="#0b79e8"
+            app:textSize="16dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewSrcRightPaddingDx"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@id/tViewSrcRight"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tViewSrcRight"
+            app:srcLeftHeightNormal="19dp"
+            app:srcLeftNormal="@drawable/bitmap_tview_export01"
+            app:srcLeftPaddingNormal="6dp"
+            app:srcLeftSelect="@drawable/bitmap_tview_export02"
+            app:srcLeftWidthNormal="16dp"
+            app:text="导出"
+            app:textColorNormal="#62636c"
+            app:textColorSelect="#0b79e8"
+            app:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tViewSrcRightPaddingDx"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/tViewSrcRightPaddingDx"
+            android:color="#434343"
+            android:text="srcLeftSelect设置选中" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewRadius01"
+            android:layout_width="84dp"
+            android:layout_height="18dp"
+            android:layout_below="@id/tViewSrcRight"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:backgroundNormal="#0e82f6"
+            app:radiusBottomLeft="0dp"
+            app:radiusBottomRight="87dp"
+            app:radiusTopLeft="30dp"
+            app:radiusTopRight="0dp"
+            app:text="即将过期"
+            app:textColorNormal="#ffffff"
+            app:textSize="12sp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewRadius02"
+            android:layout_width="84dp"
+            android:layout_height="18dp"
+            android:layout_alignTop="@id/tViewRadius01"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tViewRadius01"
+            app:backgroundAngleNormal="45"
+            app:backgroundEndNormal="#ffa506"
+            app:backgroundStartNormal="#ff663f"
+            app:radiusBottomLeft="0dp"
+            app:radiusBottomRight="87dp"
+            app:radiusTopLeft="30dp"
+            app:radiusTopRight="0dp"
+            app:text="即将过期"
+            app:textColorNormal="#ffffff"
+            app:textSize="12sp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/tViewRadius01"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:strokeColorNormal="#ff663f"
+            app:strokeWidthNormal="1dp"
+            app:text="再次预定"
+            app:textColorNormal="#ff663f"
+            app:textPaddingLeft="10dp"
+            app:textPaddingRight="10dp" />
+
+        <com.rickicecream.rick.TLayout
+            android:id="@+id/tLayout01"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tViewPadding"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layoutRadius="4dp"
+            app:layoutStrokeColor="#e21e1a"
+            app:layoutStrokeWidth="1dp"
+            app:strokeWidthNormal="1dp">
+
+            <com.rickicecream.rick.TView
+                android:id="@+id/tv"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-45dp"
+                android:rotation="315"
+                app:backgroundNormal="#e21e1a"
+                app:text="10"
+                app:textColorNormal="#ffffff"
+                app:textDx="-6dp"
+                app:textSize="11sp" />
+        </com.rickicecream.rick.TLayout>
+
+        <TextView
+            android:id="@+id/textPrompt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tLayout01"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:color="#434343" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/textPrompt10"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+    </RelativeLayout>
+</ScrollView>

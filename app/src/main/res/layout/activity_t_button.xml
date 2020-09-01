@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:orientation="horizontal">
+
+            <com.rickicecream.rick.TButton
+                android:id="@+id/tButton01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:buttonBackgroundNormal="#ffffff"
+                app:buttonBitmapFractionBottom="63%"
+                app:buttonBitmapFractionTop="13%"
+                app:buttonSrcNormal="@drawable/bitmap_tbutton_car"
+                app:buttonForegroundPress="#18000000"
+                app:buttonTextColor="#4a4a4a"
+                app:buttonTextFractionBottom="86%"
+                app:buttonTextFractionTop="72%"
+                app:buttonTextSize="14dp"
+                app:buttonText="马上用车" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#dedede" />
+
+            <com.rickicecream.rick.TButton
+                android:id="@+id/tButton02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:buttonBackgroundNormal="#ffffff"
+                app:buttonBitmapFractionBottom="63%"
+                app:buttonBitmapFractionTop="13%"
+                app:buttonSrcNormal="@drawable/bitmap_tbutton_time"
+                app:buttonForegroundPress="#18000000"
+                app:buttonTextColor="#4a4a4a"
+                app:buttonTextFractionBottom="86%"
+                app:buttonTextFractionTop="72%"
+                app:buttonTextSize="14dp"
+                app:buttonText="预约用车" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#dedede" />
+
+            <com.rickicecream.rick.TButton
+                android:id="@+id/tButton03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:buttonBackgroundNormal="#ffffff"
+                app:buttonBitmapFractionBottom="63%"
+                app:buttonBitmapFractionTop="13%"
+                app:buttonSrcNormal="@drawable/bitmap_tbutton_plane"
+                app:buttonForegroundPress="#18000000"
+                app:buttonTextColor="#4a4a4a"
+                app:buttonTextFractionBottom="86%"
+                app:buttonTextFractionTop="72%"
+                app:buttonTextSize="14dp"
+                app:buttonText="接机送机" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

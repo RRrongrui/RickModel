@@ -1,0 +1,46 @@
+package com.rickmodel.activity;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+
+import com.rickicecream.rick.TAnalysis;
+import com.rickmodel.R;
+
+
+/**
+ * @author TunaSashimi
+ * @date 2015-10-30 16:53
+ * @Copyright 2015 TunaSashimi. All rights reserved.
+ * @Description
+ */
+public class TAnalysisActivity extends Activity {
+    private TAnalysis tAnalysis;
+    private SeekBar seekbar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_t_analysis);
+
+        tAnalysis = findViewById(R.id.tAnalysis);
+        seekbar = findViewById(R.id.seekbar);
+
+        seekbar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                tAnalysis.setAnalyaiaControlXY(progress, progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+        });
+    }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <com.rickicecream.rick.TSector
+        android:id="@+id/tSector"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:sectorArcWidthIn="12dp"
+        app:sectorArcWidthOut="2dp"
+        app:sectorDragRadius="4dp"
+        app:sectorSpaceWidth="12dp" />
+
+    <com.rickicecream.rick.TView
+        android:id="@+id/tViewProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tSector"
+        android:layout_centerHorizontal="true"
+        app:textColorNormal="#4acc75"
+        app:textSize="40sp"
+        app:text="0%" />
+
+    <com.rickicecream.rick.TView
+        android:id="@+id/tViewSubtract"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        app:radius="6dp"
+        app:strokeColorNormal="#3597d0"
+        app:strokeWidthNormal="1dp"
+        app:textColorNormal="#3597d0"
+        app:textSize="16dp"
+        app:text="-" />
+
+    <com.rickicecream.rick.TView
+        android:id="@+id/tViewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/tViewSubtract"
+        android:layout_marginBottom="6dp"
+        app:radius="6dp"
+        app:strokeColorNormal="#3597d0"
+        app:strokeWidthNormal="1dp"
+        app:textColorNormal="#3597d0"
+        app:textSize="16dp"
+        app:text="+" />
+</RelativeLayout>

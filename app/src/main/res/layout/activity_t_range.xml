@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <com.rickicecream.rick.TLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        app:layoutBackground="#ffffff"
+        app:layoutRadiusTopLeft="10dp"
+        app:layoutRadiusTopRight="10dp">
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewPrice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            app:contentColorNormal="#1b307c"
+            app:contentGravity="left"
+            app:contentPaddingLeft="50dp"
+            app:contentSize="13dp"
+            app:text="价格"
+            app:textColorNormal="#62636c"
+            app:textGravity="left"
+            app:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_price_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tViewPrice"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="16dp"
+            android:text="¥0"
+            android:textColor="#62636c"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_price_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_price_start"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:text="不限"
+            android:textColor="#62636c"
+            android:textSize="14dp" />
+
+        <com.rickicecream.rick.TBubble
+            android:id="@+id/tBubble"
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tViewPrice"
+            android:layout_marginTop="14dp"
+            android:visibility="invisible"
+            app:bubbleBackground="#000000"
+            app:bubbleCornerHeight="6dp"
+            app:bubbleCornerWidth="6dp"
+            app:bubblePosition="middle"
+            app:bubbleTextColor="#ffffff"
+            app:bubbleTextSize="12dp"
+            app:bubbleToward="bottom"
+            app:radius="4dp" />
+
+        <com.rickicecream.rick.TRange
+            android:id="@+id/tRange"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/tBubble"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            app:rangeColorNormal="#dde2e8"
+            app:rangeColorSelect="#0989ea"
+            app:rangeDragColor="#ffffff"
+            app:rangeDragStrokeColor="#dde2e8"
+            app:rangeDragStrokeWidth="2dp"
+            app:rangeThick="2dp"
+            app:rangeValueArray="@array/range_value_array" />
+
+        <TextView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tRange"
+            android:layout_alignLeft="@id/tViewPrice"
+            android:layout_marginTop="16dp"
+            android:text="星级(单选)"
+            android:textColor="#62636c"
+            android:textSize="14dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewNoLimit"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_star"
+            android:layout_alignLeft="@id/tv_star"
+            android:layout_marginTop="16dp"
+            app:backgroundNormal="#f5f6fb"
+            app:backgroundSelect="#dcecfc"
+            app:radius="4dp"
+            app:select="true"
+            app:srcAnchorGravity="bottom|right"
+            app:srcAnchorHeightSelect="15dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select03"
+            app:srcAnchorWidthSelect="15dp"
+            app:text="不限"
+            app:textColorNormal="#444344"
+            app:textColorSelect="#0e82f6"
+            app:textSize="13dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewStarTwo"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tViewNoLimit"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tViewNoLimit"
+            app:backgroundNormal="#f5f6fb"
+            app:backgroundSelect="#dcecfc"
+            app:radius="4dp"
+            app:srcAnchorGravity="bottom|right"
+            app:srcAnchorHeightSelect="15dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select03"
+            app:srcAnchorWidthSelect="15dp"
+            app:text="二星连锁"
+            app:textColorNormal="#444344"
+            app:textColorSelect="#0e82f6"
+            app:textSize="13dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewStarThree"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tViewStarTwo"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tViewStarTwo"
+            app:backgroundNormal="#f5f6fb"
+            app:backgroundSelect="#dcecfc"
+            app:radius="4dp"
+            app:srcAnchorGravity="bottom|right"
+            app:srcAnchorHeightSelect="15dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select03"
+            app:srcAnchorWidthSelect="15dp"
+            app:text="三星舒适"
+            app:textColorNormal="#444344"
+            app:textColorSelect="#0e82f6"
+            app:textSize="13dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewStarFour"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tViewStarThree"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tViewStarThree"
+            app:backgroundNormal="#f5f6fb"
+            app:backgroundSelect="#dcecfc"
+            app:radius="4dp"
+            app:srcAnchorGravity="bottom|right"
+            app:srcAnchorHeightSelect="15dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select03"
+            app:srcAnchorWidthSelect="15dp"
+            app:text="四星高档"
+            app:textColorNormal="#444344"
+            app:textColorSelect="#0e82f6"
+            app:textSize="13dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewStarFive"
+            android:layout_width="66dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/tViewStarFour"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tViewStarFour"
+            app:backgroundNormal="#f5f6fb"
+            app:backgroundSelect="#dcecfc"
+            app:radius="4dp"
+            app:srcAnchorGravity="bottom|right"
+            app:srcAnchorHeightSelect="15dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select03"
+            app:srcAnchorWidthSelect="15dp"
+            app:text="五星豪华"
+            app:textColorNormal="#444344"
+            app:textColorSelect="#0e82f6"
+            app:textSize="13dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewReset"
+            android:layout_width="140dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/tViewNoLimit"
+            android:layout_alignLeft="@id/tViewNoLimit"
+            android:layout_marginTop="20dp"
+            app:radius="20dp"
+            app:strokeColorNormal="#0e82f6"
+            app:strokeWidthNormal="1px"
+            app:text="重置"
+            app:textColorNormal="#0e82f6"
+            app:touchUp="touchUp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewComplete"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignTop="@id/tViewReset"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/tViewReset"
+            app:backgroundNormal="#0e82f6"
+            app:radius="20dp"
+            app:text="完成"
+            app:textColorNormal="#ffffff"
+            app:touchUp="touchUp" />
+
+    </com.rickicecream.rick.TLayout>
+</RelativeLayout>

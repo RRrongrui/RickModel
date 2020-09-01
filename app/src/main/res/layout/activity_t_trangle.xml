@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.rickicecream.rick.TTrangle
+        android:id="@+id/tTrangleTop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:trangleBackgroundNormal="#fae500"
+        app:trangleBackgroundPress="#d9c700"
+        app:trangleStyle="top" />
+
+    <com.rickicecream.rick.TTrangle
+        android:id="@+id/tTrangleBottom"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tTrangleTop"
+        android:layout_toRightOf="@id/tTrangleTop"
+        app:trangleBackgroundNormal="#fae500"
+        app:trangleBackgroundPress="#d9c700"
+        app:trangleStyle="bottom"
+        app:trangleStrokeColor="#592d2e"
+        app:trangleStrokeWidth="2dp" />
+
+    <com.rickicecream.rick.TTrangle
+        android:id="@+id/tTrangleLeft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tTrangleBottom"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tTrangleBottom"
+        app:trangleBackgroundNormal="#fae500"
+        app:trangleBackgroundSelect="#592d2d"
+        app:trangleStyle="left" />
+
+    <com.rickicecream.rick.TTrangle
+        android:id="@+id/tTrangleRight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/tTrangleLeft"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tTrangleLeft"
+        app:trangleBackgroundNormal="#fae500"
+        app:trangleBackgroundSelect="#592d2d"
+        app:trangleStyle="right"
+        app:trangleStrokeColor="#592d2e"
+        app:trangleStrokeWidth="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/tTrangleTop"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <com.rickicecream.rick.TTrangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:trangleBackgroundNormal="#fae500"
+            app:trangleStyle="bottom" />
+
+        <com.rickicecream.rick.TTrangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:trangleBackgroundNormal="#fae500"
+            app:trangleStyle="bottom" />
+
+        <com.rickicecream.rick.TTrangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:trangleBackgroundNormal="#fae500"
+            app:trangleStyle="bottom" />
+
+        <com.rickicecream.rick.TTrangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:trangleBackgroundNormal="#fae500"
+            app:trangleStyle="bottom" />
+
+        <com.rickicecream.rick.TTrangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:trangleBackgroundNormal="#fae500"
+            app:trangleStyle="bottom" />
+
+        <com.rickicecream.rick.TTrangle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:trangleBackgroundNormal="#fae500"
+            app:trangleStyle="bottom" />
+    </LinearLayout>
+</RelativeLayout>

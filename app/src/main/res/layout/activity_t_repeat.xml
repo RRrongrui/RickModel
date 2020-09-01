@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5">
+
+    <com.rickicecream.rick.TLayout
+        android:id="@+id/tLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:layoutBackground="#ffffff"
+        app:layoutRadius="5dp"
+        app:layoutStrokeColor="#b2b2b2"
+        app:layoutStrokeWidth="1dp">
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/checkReason01"
+            android:layout_width="118dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:backgroundNormal="#f0eff5"
+            app:backgroundSelect="#ffffff"
+            app:radius="5dp"
+            app:srcAnchorGravity="right|bottom"
+            app:srcAnchorHeightSelect="11dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select02"
+            app:srcAnchorWidthSelect="12dp"
+            app:strokeColorSelect="#fed136"
+            app:strokeWidthSelect="1dp"
+            app:text="服务态度不好"
+            app:textColorNormal="#666666"
+            app:textSize="14dp" />
+
+        <com.rickicecream.rick.TView
+            android:layout_width="118dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@id/checkReason01"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:backgroundNormal="#f0eff5"
+            app:backgroundSelect="#ffffff"
+            app:radius="5dp"
+            app:srcAnchorGravity="right|bottom"
+            app:srcAnchorHeightSelect="11dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select02"
+            app:srcAnchorWidthSelect="12dp"
+            app:strokeColorSelect="#fed136"
+            app:strokeWidthSelect="1dp"
+            app:text="服务态度不好"
+            app:textColorNormal="#666666"
+            app:textSize="14dp" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/checkReason03"
+            android:layout_width="118dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/checkReason01"
+            android:layout_margin="20dp"
+            app:backgroundNormal="#f0eff5"
+            app:backgroundSelect="#ffffff"
+            app:radius="5dp"
+            app:srcAnchorGravity="right|bottom"
+            app:srcAnchorHeightSelect="11dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select02"
+            app:srcAnchorWidthSelect="12dp"
+            app:strokeColorSelect="#fed136"
+            app:strokeWidthSelect="1dp"
+            app:text="服务态度不好"
+            app:textColorNormal="#666666"
+            app:textSize="14dp" />
+
+        <com.rickicecream.rick.TView
+            android:layout_width="118dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@id/checkReason03"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            app:backgroundNormal="#f0eff5"
+            app:backgroundSelect="#ffffff"
+            app:radius="5dp"
+            app:srcAnchorGravity="right|bottom"
+            app:srcAnchorHeightSelect="11dp"
+            app:srcAnchorSelect="@drawable/bitmap_tview_anchor_select02"
+            app:srcAnchorWidthSelect="12dp"
+            app:strokeColorSelect="#fed136"
+            app:strokeWidthSelect="1dp"
+            app:text="服务态度不好"
+            app:textColorNormal="#666666"
+            app:textSize="14dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/checkReason03"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/xml_et_repeat_bg"
+            android:gravity="top|left"
+            android:hint="请输入原因...(非必填)"
+            android:padding="20dp"
+            android:textColor="#666666"
+            android:textSize="14dp" />
+    </com.rickicecream.rick.TLayout>
+
+    <com.rickicecream.rick.TLine
+        android:id="@+id/tLine"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/tLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-1dp"
+        app:lineBackground="#ffffff"
+        app:lineColor="#b2b2b2"
+        app:lineStyle="bottom"
+        app:lineThick="1dp" />
+
+    <com.rickicecream.rick.TRepeat
+        android:id="@+id/tRepeatStar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/tLayout"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        app:repeatSelect="connect"
+        app:repeatShape="custom"
+        app:repeatSrcNormal="@drawable/bitmap_trepeat_star_normal"
+        app:repeatSrcSelect="@drawable/bitmap_trepeat_star_select"
+        app:repeatTotal="5" />
+
+    <com.rickicecream.rick.TRepeat
+        android:id="@+id/tRepeatCar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tRepeatStar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        app:repeatItemFractionBottom="50%"
+        app:repeatItemTextColorNormal="#b2b2b2"
+        app:repeatItemTextColorSelect="#000000"
+        app:repeatItemTextFractionBottom="86%"
+        app:repeatItemTextFractionTop="72%"
+        app:repeatItemTextSize="14dp"
+        app:repeatSelect="current"
+        app:repeatShape="custom"
+        app:repeatSrcNormal="@drawable/bitmap_trepeat_car_normal"
+        app:repeatSrcSelect="@drawable/bitmap_trepeat_car_select" />
+
+    <com.rickicecream.rick.TRepeat
+        android:id="@+id/tRepeatTips"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_below="@id/tRepeatCar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:repeatItemBackgroundNormal="#ffffff"
+        app:repeatItemBackgroundSelect="#999999"
+        app:repeatSelect="current"
+        app:repeatShape="circle"
+        app:repeatTotal="5" />
+</RelativeLayout>

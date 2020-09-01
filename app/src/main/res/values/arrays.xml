@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="dialog_text_color_array_choice">
+        <item>0xff999999</item>
+        <item>0xff1b307c</item>
+    </integer-array>
+
+    <integer-array name="dialog_text_color_array_select">
+        <item>0xff999999</item>
+        <item>0xff999999</item>
+        <item>0xff1b307c</item>
+    </integer-array>
+
+    <string-array name="dialog_text_value_array_confirm">
+        <item>知道了</item>
+    </string-array>
+
+    <string-array name="dialog_text_value_array_choice">
+        <item>确认取消</item>
+        <item>点错了</item>
+    </string-array>
+
+    <string-array name="dialog_text_value_array_select">
+        <item>选项一</item>
+        <item>选项二</item>
+        <item>选项三</item>
+    </string-array>
+
+    <string-array name="seek_text_value_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="range_value_array">
+        <item>¥0</item>
+        <item>¥50</item>
+        <item>¥100</item>
+        <item>¥150</item>
+        <item>¥200</item>
+        <item>¥250</item>
+        <item>¥300</item>
+        <item>¥350</item>
+        <item>¥400</item>
+        <item>¥450</item>
+        <item>¥500</item>
+        <item>¥550</item>
+        <item>¥600</item>
+        <item>¥650</item>
+        <item>¥700</item>
+        <item>¥750</item>
+        <item>¥800</item>
+        <item>¥850</item>
+        <item>¥900</item>
+        <item>¥950</item>
+        <item>¥1000</item>
+        <item>不限</item>
+    </string-array>
+
+    <string-array name="wrap_text_array">
+        <item>用户要求换车</item>
+        <item>车辆不整洁</item>
+        <item>车辆设施不完备</item>
+        <item>车辆损坏</item>
+        <item>用户要求换车</item>
+        <item>车辆不整洁</item>
+        <item>车辆设施不完备</item>
+        <item>车辆损坏</item>
+    </string-array>
+</resources>

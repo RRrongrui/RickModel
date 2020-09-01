@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1eaee">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG01"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG02"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG01"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG01"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG03"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG02"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG02"
+            app:SVGStyle="star"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG04"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG03"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG03"
+            app:SVGStyle="star"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG05"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tSVG01"
+            android:layout_alignLeft="@id/tSVG01"
+            android:layout_marginTop="16dp"
+            app:SVGStyle="heart"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG06"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG05"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG05"
+            app:SVGStyle="heart"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG07"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG06"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG06"
+            app:SVGStyle="flower"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG08"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG07"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG07"
+            app:SVGStyle="flower"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG09"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tSVG05"
+            android:layout_alignLeft="@id/tSVG05"
+            android:layout_marginTop="16dp"
+            app:SVGStyle="pentagon"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG10"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG09"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG09"
+            app:SVGStyle="pentagon"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG11"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG10"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG10"
+            app:SVGStyle="sixteenedge"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG12"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG11"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG11"
+            app:SVGStyle="sixteenedge"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG13"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tSVG09"
+            android:layout_alignLeft="@id/tSVG09"
+            android:layout_marginTop="16dp"
+            app:SVGStyle="fortyedge"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG14"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG13"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG13"
+            app:SVGStyle="fortyedge"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG15"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG14"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG14"
+            app:SVGStyle="snail"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG16"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG15"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG15"
+            app:SVGStyle="snail"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG17"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tSVG13"
+            android:layout_alignLeft="@id/tSVG13"
+            android:layout_marginTop="16dp"
+            app:SVGStyle="circle"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_in" />
+
+        <com.rickicecream.rick.TSVG
+            android:id="@+id/tSVG18"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@id/tSVG17"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tSVG17"
+            app:SVGStyle="circle"
+            app:SVGSrc="@drawable/bitmap_icon_rrongrui"
+            app:porterDuffXferStyle="src_out" />
+    </RelativeLayout>
+</ScrollView>

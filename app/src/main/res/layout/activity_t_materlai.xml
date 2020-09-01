@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c1eaee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textMaterial01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="materialTime设置动画时长\nmaterialSpread设置中心偏移"
+            android:textColor="#434343" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewMaterial01"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/textMaterial01"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:backgroundNormal="#ffffff"
+            app:backgroundPress="#bc7955"
+            app:materialTime="1000"
+            app:textColorNormal="#bc7955"
+            app:textColorPress="#ffffff"
+            app:textSize="16dp"
+            app:text="materialTime=1000" />
+
+        <com.rickicecream.rick.TView
+            android:id="@+id/tViewMaterial02"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/tViewMaterial01"
+            android:layout_margin="16dp"
+            app:backgroundNormal="#ffffff"
+            app:backgroundPress="#bc7955"
+            app:materialTime="2000"
+            app:textColorNormal="#bc7955"
+            app:textColorPress="#ffffff"
+            app:textSize="16dp"
+            app:text="materialTime=2000" />
+
+        <RelativeLayout
+            android:id="@+id/relativeMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/tViewMaterial02"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <View
+                android:id="@+id/viewAnchor01"
+                style="@style/ViewAnchor" />
+
+            <com.rickicecream.rick.TView
+                android:id="@+id/tViewMaterial03"
+                style="@style/TViewGroupDrackBrownStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/viewAnchor01"
+                app:materialTime="1000"
+                app:select="true"
+                app:textMarkColor="#ff0000"
+                app:textMarkRadius="5dp"
+                app:text="金枪鱼刺身" />
+
+            <com.rickicecream.rick.TView
+                android:id="@+id/tViewMaterial04"
+                style="@style/TViewGroupDrackBrownEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/viewAnchor01"
+                app:materialTime="1000"
+                app:textMark="true"
+                app:textMarkColor="#ff0000"
+                app:textMarkRadius="5dp"
+                app:text="TunaSashimi" />
+        </RelativeLayout>
+
+        <com.rickicecream.rick.TView
+            android:layout_width="288dp"
+            android:layout_height="288dp"
+            android:layout_below="@id/relativeMaterial"
+            android:layout_margin="16dp"
+            app:backgroundNormal="#ffffff"
+            app:backgroundPress="#000000"
+            app:materialMove="true"
+            app:materialTime="1000"
+            app:textColorNormal="#000000"
+            app:textColorPress="#ffffff"
+            app:textSize="16dp"
+            app:text="materialMove=true" />
+    </RelativeLayout>
+
+</ScrollView>
